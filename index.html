@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>kanban</h2>
+      <ul class="menu">
+        <li class="active">Platform Launch</li>
+        <li>Marketing Plan</li>
+        <li>Roadmap</li>
+        <li class="new-board">+ Create New Board</li>
+      </ul>
+      <div class="theme-toggle">
+        <span>🌞</span>
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch">
+          <span class="slider round"></span>
+        </label>
+        <span>🌙</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header>
+        <h1>Platform Launch</h1>
+        <button class="add-task">+ Add New Task</button>
+      </header>
+
+      <div class="columns">
+        <div class="column todo">
+          <h3>TODO (4)</h3>
+          <div class="card">Build UI for onboarding flow <div class="subtasks"> 0 of 3 subtasks</div></div>
+          <div class="card">Build UI for search <div class="subtasks"> 0 of 1 subtasks</div></div>
+          <div class="card">Build settings UI <div class="subtasks"> 0 of 2 subtasks</div></div>
+          <div class="card">QA and test all major user journeys <div class="subtasks"> 0 of 2 subtasks</div> </div>
+      
+        </div>
+        <div class="column doing">
+          <h3>DOING (4)</h3>
+          <div class="card">Design settings and search pages <div class="subtasks">1 of 3 subtasks</div></div>
+          <div class="card">Add account management endpoints <div class="subtasks">2 of 2 subtasks</div></div>
+          <div class="card">Design onboarding flow <div class="subtasks">1 of 3 subtasks</div></div>
+          <div class="card">Add search endpoints <div class="subtasks">1 of 2 subtasks</div></div>
+          <div class="card">Add authentication endpoints <div class="subtasks">1 of 2 subtasks</div>
+          </div>
+          <div class="card">Research pricing points of various comprtiotors and trial diffrent buisness modies <div class="subtasks">1 of 3 subtasks</div>
+          </div>
+        </div>
+        <div class="column done">
+          <h3>DONE (7)</h3>
+          <div class="card">Conduct 5 wireframe tests <div class="subtasks"> 1 of 1 subtasks</div></div>
+          <div class="card">Create wireframe prototype <div class="subtasks"> 1 of 1 subtasks</div></div>
+          <div class="card">Review results of usability tests and iterate <div class="subtasks"> 3 of 3 subtasks</div></div>
+          <div class="card">Create paper prototypes and conduct usability tests  with potential customer <div class="subtasks"> 2 of 2 subtasks</div></div>
+          <div class="card">Market discovery <div class="subtasks"> 1 of 1 subtasks</div></div>
+          <div class="card">Competitor analysis <div class="subtasks"> 2 of 2 subtasks</div></div>
+          <div class="card">Research the market <div class="subtasks"> 2 of 2 subtasks</div></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

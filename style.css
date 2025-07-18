@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #20212c;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #2b2c37;
+  padding: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.menu li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu li.active,
+.menu li:hover {
+  background-color: #635fc7;
+  color: white;
+}
+
+.new-board {
+  color: #635fc7;
+  font-weight: bold;
+}
+
+/* Toggle */
+.theme-toggle {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #635fc7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: #20212c;
+  overflow-x: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-task {
+  background-color: #635fc7;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  background-color: #2b2c37;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.column h3 {
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #20212c;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
